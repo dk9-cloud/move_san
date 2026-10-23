@@ -19,3 +19,52 @@
   .card .thumb { display: none; }
   .card :global(.btn-sm) { justify-self: start; }
 }
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.inputGroup label {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.inputWrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  transition: border-color 0.2s;
+}
+
+.inputWrap:focus-within {
+  border-color: var(--brand);
+}
+
+.inputWrap input {
+  width: 100%;
+  min-width: 0;
+  height: 44px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 15px;
+  color: var(--ink);
+}
+
+.inputWrap input::placeholder {
+  color: #9ca3af;
+}
+
+.inputWrap span {
+  flex: none;
+  font-size: 14px;
+  color: var(--sub);
+}
